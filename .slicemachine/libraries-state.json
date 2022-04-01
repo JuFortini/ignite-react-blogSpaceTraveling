@@ -1,0 +1,135 @@
+{
+  "slices": {
+    "components": {
+      "posts": {
+        "library": "slices",
+        "id": "posts",
+        "name": "Posts",
+        "description": "Posts",
+        "model": {
+          "id": "posts",
+          "type": "SharedSlice",
+          "name": "Posts",
+          "description": "Posts",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Posts",
+              "primary": {
+                "title": {
+                  "config": {
+                    "label": "title",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "subtitle": {
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "author": {
+                  "config": {
+                    "label": "author",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "banner": {
+                  "config": {
+                    "label": "banner",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {
+                "heading": {
+                  "config": {
+                    "label": "heading",
+                    "placeholder": ""
+                  },
+                  "type": "Text"
+                },
+                "body": {
+                  "config": {
+                    "label": "body",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "posts",
+            "items": [
+              {
+                "heading": "incubate scalable portals",
+                "body": [
+                  {
+                    "type": "paragraph",
+                    "text": "Amet ipsum non Lorem proident et cillum ipsum ad dolor incididunt laborum exercitation.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "heading": "enable one-to-one web-readiness",
+                "body": [
+                  {
+                    "type": "paragraph",
+                    "text": "Pariatur elit cupidatat occaecat laboris sint officia dolore occaecat culpa aute reprehenderit ex eiusmod laborum magna. Ipsum officia labore eu deserunt ipsum duis aute.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "heading": "unleash robust mindshare",
+                "body": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eu tempor elit excepteur anim do Lorem ex fugiat consequat Lorem aliquip. Qui anim ut pariatur eiusmod labore veniam sint ea nostrud aliqua. Fugiat dolor veniam aliquip aliqua velit dolor.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": "utilize innovative blockchains",
+              "subtitle": "incentivize distributed deliverables",
+              "author": "extend mission-critical applications",
+              "banner": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}
