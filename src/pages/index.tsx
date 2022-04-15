@@ -37,7 +37,7 @@ export default function Home({ postsPagination }: HomeProps) {
   async function handlePostsPagination() {
     const newPage = await fetch(nextPage);
     const newPosts = await newPage.json();
-
+    
     const newResults = newPosts.results.map(post => {
       return {
         uid: post.uid,
@@ -50,7 +50,7 @@ export default function Home({ postsPagination }: HomeProps) {
       }
     });
 
-    setPagePosts([...pagePosts, newResults[0]]);
+    setPagePosts([...pagePosts, ...newResults]);
     setNextPage(newPosts.next_page);
     
   }
