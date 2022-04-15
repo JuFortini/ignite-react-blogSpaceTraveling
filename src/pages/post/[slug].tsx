@@ -96,7 +96,7 @@ export default function Post({ post }: PostProps) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const prismic = getPrismicClient();
   const posts = await prismic.getByType('posts', {
-    pageSize: 2,
+    pageSize: 5,
     orderings: ['document.first_publication_date desc'],
   });
 
