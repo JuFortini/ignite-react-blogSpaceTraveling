@@ -5,5 +5,5 @@
 - [src/pages/post/post.module.scss]
 - [src/components/Header/index.tsx] ✔
 - [src/components/Header/header.module.scss] ✔
-- [src/styles/global.scss]
-- [src/styles/common.module.scss]
+- [src/styles/global.scss] ✔
+- [src/styles/common.module.scss] ✔

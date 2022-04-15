@@ -65,7 +65,7 @@ export default function Home({ postsPagination }: HomeProps) {
           <section
             key={post.uid}
             className={styles.postContainer}>
-            <Link href="#">
+            <Link href={`/post/${post.uid}`}>
               <a>
                 <strong>{post.data.title}</strong>
                 <p>{post.data.subtitle}</p>

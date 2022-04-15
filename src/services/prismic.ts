@@ -12,7 +12,7 @@ export function linkResolver(doc: any) {
         case 'homepage':
             return '/';
         case 'page':
-            return `/${doc.uid}`;
+            return `/post/${doc.uid}`;
         default:
             return null;
     }
@@ -25,8 +25,8 @@ export function getPrismicClient(config?: any) {
 
     enableAutoPreviews({
         client,
-        previewData: config.previewData,
-        req: config.req,
+        previewData: config?.previewData,
+        req: config?.req,
     });
 
     return client;
