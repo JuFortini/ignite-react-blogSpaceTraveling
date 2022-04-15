@@ -98,7 +98,7 @@ export const getStaticProps: GetStaticProps = async ({ previewData }) => {
 
   const postResponse = await prismic.getByType('posts', {
     fetch: ['post.title', 'post.subtitle', 'post.author'],
-    pageSize: 1,
+    pageSize: 2,
     orderings: ['document.first_publication_date desc']
   });
 
